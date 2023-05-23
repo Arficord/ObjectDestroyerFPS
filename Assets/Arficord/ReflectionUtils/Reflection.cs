@@ -14,7 +14,14 @@ namespace Arf.ReflectionUtils
             return AppDomain.CurrentDomain.GetAssemblies()
                 .SelectMany(assembly => assembly.GetTypes())
                 .Where(type => type.IsSubclassOf(typeof(T)));
-            //.Select(type => Activator.CreateInstance(type) as Ability);
+            //return GetAllInheritedClasses(typeof(T));
+        }
+        
+        public static IEnumerable<Type> GetAllInheritedClasses(Type parentType)
+        {
+            return AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(assembly => assembly.GetTypes())
+                .Where(type => type.IsSubclassOf(parentType));
         }
     }
 }

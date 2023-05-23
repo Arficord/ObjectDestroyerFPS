@@ -13,14 +13,7 @@ namespace ObjectDestroyerFPS.Equipment.Items
     {
         [SerializeReference] private ShootModule _shootModule;
         [SerializeReference] private ImpactModule _impactModule;
-
-        //TODO: delete. this test method
-        private void Awake()
-        {
-            _shootModule = new RaycastModule();
-            _impactModule = new MaterialDamageModule(); 
-        }
-
+        
         public override void Initialize(PlayerController character)
         {
             base.Initialize(character);
