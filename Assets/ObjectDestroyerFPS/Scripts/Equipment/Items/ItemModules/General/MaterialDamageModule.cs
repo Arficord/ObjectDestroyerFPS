@@ -26,11 +26,14 @@ namespace ObjectDestroyerFPS.Equipment.Items.Modules
         {
             if (hitInfo.TargetCollider == null)
             {
-
+                Debug.Log("Hit info do not contain collider reference");
+                return;
             }
-            
-            if (!hitInfo.TargetCollider.TryGetComponent(out IDamagable damagable))
+
+            var damagable = hitInfo.TargetCollider.GetComponentInParent<IDamagable>();
+            if (damagable == null)
             {
+                Debug.Log($"Hit info do not contain IDamagable component on target [{hitInfo.TargetCollider.gameObject.name}]");
                 return;
             }
             

@@ -36,4 +36,9 @@ public class CameraController : MonoBehaviour
     {
         return _cameraTransform.forward;
     }
+
+    public Vector3 GetPosition()
+    {
+        return _cameraTransform.position;
+    }
 }

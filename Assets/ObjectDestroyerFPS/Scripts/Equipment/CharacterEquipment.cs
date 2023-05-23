@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Arf.Player;
+using ObjectDestroyerFPS.Equipment.Items;
 using UnityEngine;
 
 namespace ObjectDestroyerFPS.Equipment
@@ -15,6 +17,21 @@ namespace ObjectDestroyerFPS.Equipment
             public Transform PlaceTransform => placeTransform;
         }
 
-        public EquipmentSlot[] _euipmentSlots;
+        [SerializeField] private EquipmentSlot[] _euipmentSlots;
+
+        [SerializeField] private UsableEquipItem _usableEquipItem;
+
+        private void Awake()
+        {
+            _usableEquipItem.Initialize(GetComponent<PlayerController>());
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                _usableEquipItem.Use();
+            }
+        }
     }
 }

@@ -8,11 +8,10 @@ namespace ObjectDestroyerFPS.Equipment.Items.Modules
 {
     public class RaycastModule : ShootModule
     {
-        [SerializeField] private Transform shootPoint;
         [SerializeField] private LayerMask layerMask;
         [SerializeField] private float distance = 30;
         [SerializeField] private QueryTriggerInteraction triggerDetection;
-        [SerializeField] [Min(1)] private int maxTargetsAmout = 1;
+        [SerializeField] [Min(1)] private int maxTargetsAmount = 1;
 
         protected ShootableEquipItem _shootableItem;
         protected RaycastHit[] _raycastHits;
@@ -23,14 +22,19 @@ namespace ObjectDestroyerFPS.Equipment.Items.Modules
             base.Initialize(item);
             _shootableItem = (ShootableEquipItem) item;
             
-            _raycastHits = new RaycastHit[maxTargetsAmout];
+            _raycastHits = new RaycastHit[maxTargetsAmount];
             _hitInfo = new HitInfo();
         }
 
         public override void ProceedShoot()
         {
-            var lookDirection = _item.Character.CameraController.GetLookDirection();
-            var size = Physics.RaycastNonAlloc(shootPoint.position, lookDirection, _raycastHits, distance, layerMask, triggerDetection);
+            var camera = _item.Character.CameraController;
+            
+            var cameraPosition = camera.GetPosition();
+            var lookDirection = camera.GetLookDirection();
+            
+            var size = Physics.RaycastNonAlloc(cameraPosition, lookDirection, _raycastHits, distance, layerMask, triggerDetection);
+            Debug.DrawRay(cameraPosition, lookDirection, Color.red, 5);
 
             for (int i = 0; i < size; i++)
             {
