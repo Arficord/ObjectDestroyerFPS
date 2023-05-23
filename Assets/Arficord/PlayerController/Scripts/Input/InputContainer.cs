@@ -11,9 +11,8 @@ public struct InputContainer
     public bool aimButtonPressed;
     public bool jumpButtonPressed;
     public bool runButtonHold;
-    public RaycastHit lookAt;
-    
-    public InputContainer(Vector2 mouseAxis, Vector2 moveAxis, bool shootButtonPressed, bool aimButtonPressed, bool jumpButtonPressed, bool runButtonHold, RaycastHit lookAt)
+
+    public InputContainer(Vector2 mouseAxis, Vector2 moveAxis, bool shootButtonPressed, bool aimButtonPressed, bool jumpButtonPressed, bool runButtonHold)
     {
         this.mouseAxis = mouseAxis;
         this.moveAxis = moveAxis;
@@ -23,7 +22,5 @@ public struct InputContainer
         
         this.jumpButtonPressed = jumpButtonPressed;
         this.runButtonHold = runButtonHold;
-
-        this.lookAt = lookAt;
     }
 }

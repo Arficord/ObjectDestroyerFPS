@@ -1,13 +1,13 @@
 using UnityEngine;
 
 
-namespace TestTask.Materials
+namespace ObjectDestroyerFPS.Materials
 {
     [CreateAssetMenu(fileName = "MaterialData", menuName = "ObjectDestroyerFPS/MaterialData")]
     public class MaterialData : ScriptableObject
     {
-        [SerializeField] private string _materialName;
+        [SerializeField] private string materialName;
         
-        public string MaterialName => _materialName;
+        public string MaterialName => materialName;
     }
 }

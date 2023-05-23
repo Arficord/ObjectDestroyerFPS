@@ -44,9 +44,8 @@ namespace Arf.InputControll
             bool aimButtonPressed = Input.GetKeyDown(aimButtonKeyCode);
             bool jumpButtonPressed = Input.GetKeyDown(jumpButtonKeyCode);
             bool runButtonHold = Input.GetKey(runButtonKeyCode);
-            RaycastHit lookAt = GetLookAtItem();
             return new InputContainer(mouseAxis, moveAxis, shootButtonPressed, aimButtonPressed,
-                jumpButtonPressed, runButtonHold, lookAt);
+                jumpButtonPressed, runButtonHold);
         }
 
         public Vector2 GetMouseAxis()
@@ -82,13 +81,6 @@ namespace Arf.InputControll
             return new Vector2(xMovement, zMovement);
         }
 
-        public RaycastHit GetLookAtItem()
-        {
-            Physics.Raycast(cameraTransform.position, cameraTransform.forward, out var hitInfo);
-
-            return hitInfo;
-        }
-        
         public void SwitchInputToPlayer()
         {
             _inputReceiver = player;

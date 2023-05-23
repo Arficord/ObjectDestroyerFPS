@@ -64,6 +64,7 @@ namespace Arf.Player
         public Vector3 Velocity => _velocity;
         public Vector3 MoveVelocityInput => _moveVelocityInput;
         public MovingPlatform MovingPlatformRef => _movingPlatform;
+        public CameraController CameraController => cameraController;
 
         public StayOnInfo StayOnGroundInfo { get; private set; } = new StayOnInfo();
 

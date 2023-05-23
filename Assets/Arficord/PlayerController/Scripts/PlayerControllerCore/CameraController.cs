@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 anchorOffset;
     [SerializeField] private Camera controlledCamera;
     [SerializeField][Range(0,1)] private float positionLerpFactor = 0.5f;
-
+    
     private Transform _cameraTransform;
     private float _cameraXRotation = 0f;
 
@@ -30,5 +30,10 @@ public class CameraController : MonoBehaviour
         _cameraXRotation = Mathf.Clamp(_cameraXRotation, -90, 90);
         
         _cameraTransform.rotation = Quaternion.Euler(_cameraXRotation, anchor.rotation.eulerAngles.y, 0);
+    }
+    
+    public Vector3 GetLookDirection()
+    {
+        return _cameraTransform.forward;
     }
 }
