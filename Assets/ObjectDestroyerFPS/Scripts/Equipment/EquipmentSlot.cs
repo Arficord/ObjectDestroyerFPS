@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace ObjectDestroyerFPS.Equipment
 {
-    public class EquipmentSlot
+    public class EquipmentSlot : MonoBehaviour
     {
-        [SerializeField] private Transform placeTransform;
-
-        public Transform PlaceTransform => placeTransform;
+        [SerializeField] private int slotID;
+        
+        public int SlotID => slotID;
     }
 }

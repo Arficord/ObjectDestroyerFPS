@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78c2c154a0740f7408a5e5df42867739, type: 3}
-  m_Name: Metal
+  m_Name: RedMaterial
   m_EditorClassIdentifier: 
-  _materialName: Plastic
+  materialName: Red

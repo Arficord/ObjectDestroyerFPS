@@ -12,7 +12,7 @@ namespace ObjectDestroyerFPS.Equipment
         [SerializeField] private PlayerController _character;
         [SerializeField] private EquipItem[] _equipItems;
         [SerializeField] private bool _equipOnStart = true;
-        [SerializeField] private int _startEquipSlotID = 0;
+        [SerializeField] private int _startEquipItemID = 0;
         
         public Action<EquipItem> onItemEquipped;
         public Action<EquipItem> onItemUnEquipped;
@@ -32,7 +32,7 @@ namespace ObjectDestroyerFPS.Equipment
         {
             if (_equipOnStart)
             {
-                EquipItem(_startEquipSlotID);
+                EquipItem(_startEquipItemID);
             }
         }
 
