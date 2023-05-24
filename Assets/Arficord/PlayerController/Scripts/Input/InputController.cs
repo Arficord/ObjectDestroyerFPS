@@ -19,6 +19,9 @@ namespace Arf.InputControll
         [SerializeField] private KeyCode backwardButtonKeyCode= KeyCode.S;
         [SerializeField] private KeyCode leftButtonKeyCode= KeyCode.A;
         [SerializeField] private KeyCode rightButtonKeyCode= KeyCode.D;
+        [SerializeField] private KeyCode equip0ButtonKeyCode= KeyCode.Alpha1;
+        [SerializeField] private KeyCode equip1ButtonKeyCode= KeyCode.Alpha2;
+        [SerializeField] private KeyCode equip2ButtonKeyCode= KeyCode.Alpha3;
         [SerializeField] private string mouseXAxisName = "Mouse X";
         [SerializeField] private string mouseYAxisName = "Mouse Y";
         [SerializeField] private float mouseSensitivity = 500f;
@@ -44,8 +47,11 @@ namespace Arf.InputControll
             bool aimButtonPressed = Input.GetKeyDown(aimButtonKeyCode);
             bool jumpButtonPressed = Input.GetKeyDown(jumpButtonKeyCode);
             bool runButtonHold = Input.GetKey(runButtonKeyCode);
+            bool equip0ButtonPress = Input.GetKey(equip0ButtonKeyCode);
+            bool equip1ButtonPress = Input.GetKey(equip1ButtonKeyCode);
+            bool equip2ButtonPress = Input.GetKey(equip2ButtonKeyCode);
             return new InputContainer(mouseAxis, moveAxis, shootButtonPressed, aimButtonPressed,
-                jumpButtonPressed, runButtonHold);
+                jumpButtonPressed, runButtonHold, equip0ButtonPress, equip1ButtonPress, equip2ButtonPress);
         }
 
         public Vector2 GetMouseAxis()

@@ -241,6 +241,8 @@ MonoBehaviour:
   _abilities:
   - rid: 7981683071602130944
   - rid: 7981683071602130945
+  - rid: 7981683113157459968
+  - rid: 7981683113157459969
   references:
     version: 2
     RefIds:
@@ -257,6 +259,18 @@ MonoBehaviour:
       data:
         animatorMainID: -1
         animatorSecondaryID: -1
+    - rid: 7981683113157459968
+      type: {class: UseItemAbility, ns: ObjectDestroyerFPS.Player.Abilities, asm: Assembly-CSharp}
+      data:
+        animatorMainID: -1
+        animatorSecondaryID: -1
+        _equipment: {fileID: 501450514008372459}
+    - rid: 7981683113157459969
+      type: {class: EquipItemAbility, ns: ObjectDestroyerFPS.Player.Abilities, asm: Assembly-CSharp}
+      data:
+        animatorMainID: -1
+        animatorSecondaryID: -1
+        _equipment: {fileID: 501450514008372459}
 --- !u!114 &501450514008372459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,8 +283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b601fdcc78f3e2c48a768f270f669710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _euipmentSlots:
-  - placeTransform: {fileID: 7894581412117852411}
+  _character: {fileID: 4564608326613787928}
+  _equipItems:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _equipOnStart: 1
+  _startEquipSlotID: 0
 --- !u!1 &4564608327110570334
 GameObject:
   m_ObjectHideFlags: 0

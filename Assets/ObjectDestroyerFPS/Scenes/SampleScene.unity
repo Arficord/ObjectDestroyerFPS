@@ -177,6 +177,9 @@ MonoBehaviour:
   backwardButtonKeyCode: 115
   leftButtonKeyCode: 97
   rightButtonKeyCode: 100
+  equip0ButtonKeyCode: 49
+  equip1ButtonKeyCode: 50
+  equip2ButtonKeyCode: 51
   mouseXAxisName: Mouse X
   mouseYAxisName: Mouse Y
   mouseSensitivity: 500
@@ -727,9 +730,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 501450514008372459, guid: 99189bb81a7c7cb43b3f5c20dc956b69,
         type: 3}
-      propertyPath: _usableEquipItem
+      propertyPath: _equipItems.Array.data[0]
       value: 
       objectReference: {fileID: 827251897}
+    - target: {fileID: 501450514008372459, guid: 99189bb81a7c7cb43b3f5c20dc956b69,
+        type: 3}
+      propertyPath: _equipItems.Array.data[1]
+      value: 
+      objectReference: {fileID: 1708263083}
+    - target: {fileID: 501450514008372459, guid: 99189bb81a7c7cb43b3f5c20dc956b69,
+        type: 3}
+      propertyPath: _equipItems.Array.data[2]
+      value: 
+      objectReference: {fileID: 500347854}
     - target: {fileID: 4564608326613787911, guid: 99189bb81a7c7cb43b3f5c20dc956b69,
         type: 3}
       propertyPath: m_RootOrder
