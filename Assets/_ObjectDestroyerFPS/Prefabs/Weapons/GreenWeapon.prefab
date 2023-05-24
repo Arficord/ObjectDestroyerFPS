@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2905459137156750819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 349410153761775298}
+  - component: {fileID: 8644200816740281572}
+  m_Layer: 7
+  m_Name: GreenWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &349410153761775298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905459137156750819}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8702419161334689152}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8644200816740281572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2905459137156750819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35384f00e8f108844a132e58e013f9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipSlotID: 0
+  _shootModule:
+    rid: 7981683101419962404
+  _impactModule:
+    rid: 7981683101419962405
+  _impactEffectModule:
+    rid: 7981683113157459974
+  references:
+    version: 2
+    RefIds:
+    - rid: 7981683101419962404
+      type: {class: RaycastModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        layerMask:
+          serializedVersion: 2
+          m_Bits: 1
+        distance: 30
+        triggerDetection: 1
+        maxTargetsAmount: 10
+    - rid: 7981683101419962405
+      type: {class: MaterialDamageModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        _damageValue: 30
+        _material: {fileID: 11400000, guid: 7244879341d3a124c84622ca2358068d, type: 2}
+    - rid: 7981683113157459974
+      type: {class: ImpactEffectModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        _hitEffect: {fileID: 11400000, guid: 0e461373a8b50204492ec6df3f0de01e, type: 2}
+--- !u!1001 &7902888767104534520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 349410153761775298}
+    m_Modifications:
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180573784, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_Name
+      value: GreenGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542913232180573784, guid: 3d88414ec2e4739408197b9ce59e917b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d88414ec2e4739408197b9ce59e917b, type: 3}
+--- !u!4 &8702419161334689152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1542913232180144760, guid: 3d88414ec2e4739408197b9ce59e917b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7902888767104534520}
+  m_PrefabAsset: {fileID: 0}

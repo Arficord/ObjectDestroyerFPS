@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6701619266461903339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141343388390414617}
+  - component: {fileID: 1449712854984244204}
+  m_Layer: 7
+  m_Name: BluelWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2141343388390414617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701619266461903339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 682782720856400115}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1449712854984244204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701619266461903339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35384f00e8f108844a132e58e013f9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipSlotID: 0
+  _shootModule:
+    rid: 7981683101419962404
+  _impactModule:
+    rid: 7981683101419962405
+  _impactEffectModule:
+    rid: 7981683113157459977
+  references:
+    version: 2
+    RefIds:
+    - rid: 7981683101419962404
+      type: {class: RaycastModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        layerMask:
+          serializedVersion: 2
+          m_Bits: 1
+        distance: 30
+        triggerDetection: 1
+        maxTargetsAmount: 10
+    - rid: 7981683101419962405
+      type: {class: MaterialDamageModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        _damageValue: 30
+        _material: {fileID: 11400000, guid: 2d12a14e2c094d84abd110fe65a84536, type: 2}
+    - rid: 7981683113157459977
+      type: {class: ImpactEffectModule, ns: ObjectDestroyerFPS.Equipment.Items.Modules,
+        asm: Assembly-CSharp}
+      data:
+        _hitEffect: {fileID: 11400000, guid: 2a6492b18da30774797ceca87e541139, type: 2}
+--- !u!1001 &2674792919547681807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2141343388390414617}
+    m_Modifications:
+    - target: {fileID: 3199665394481799388, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_Name
+      value: BlueGun
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481799388, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6757441d65e72de47a3d116ea6e16983, type: 3}
+--- !u!4 &682782720856400115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3199665394481970428, guid: 6757441d65e72de47a3d116ea6e16983,
+    type: 3}
+  m_PrefabInstance: {fileID: 2674792919547681807}
+  m_PrefabAsset: {fileID: 0}
