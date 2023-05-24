@@ -92,6 +92,31 @@ PrefabInstance:
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2988904399259556545, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988904399259556545, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988904399259556545, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: InitialModule.startSize.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988904399259556545, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: InitialModule.startSizeY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2988904399259556545, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: InitialModule.startSizeZ.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4033287822461114141, guid: a164e676dbbd6e54587237e619372c98,
         type: 3}
       propertyPath: looping
@@ -101,6 +126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: looping
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7003470562967115926, guid: a164e676dbbd6e54587237e619372c98,
+        type: 3}
+      propertyPath: m_RenderAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a164e676dbbd6e54587237e619372c98, type: 3}
