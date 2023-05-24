@@ -8,14 +8,8 @@ namespace ObjectDestroyerFPS.Equipment.Items
 {
     public class UsableEquipItem : EquipItem
     {
-        public override void Initialize(PlayerController character)
-        {
-            base.Initialize(character);
-        }
-
         public virtual void Use()
         {
-            
         }
     }
 }
