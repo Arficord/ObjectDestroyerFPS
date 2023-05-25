@@ -3,7 +3,7 @@ using Arf.Pooling.Interfaces;
 using UnityEngine;
 using UnityEngine.VFX;
 
-namespace Arf.Pooling.Targets
+namespace ObjectDestroyerFPS.Effects
 {
     public class PoolableEffect : MonoBehaviour, IPoolable
     {
