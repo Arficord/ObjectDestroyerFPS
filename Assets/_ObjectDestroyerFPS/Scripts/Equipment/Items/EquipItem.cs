@@ -46,7 +46,8 @@ namespace ObjectDestroyerFPS.Equipment.Items
                 if (equipmentSlot.SlotID == slotID)
                 {
                     _transform.SetParent(equipmentSlot.transform);
-                    _transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
+                    _transform.localPosition = Vector3.zero;
+                    _transform.localRotation = Quaternion.identity;
                     return;
                 }
             }
