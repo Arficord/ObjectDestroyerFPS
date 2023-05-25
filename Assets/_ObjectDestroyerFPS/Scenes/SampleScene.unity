@@ -668,5 +668,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86500007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9978495
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.034496862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.055701174
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0019256568
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -3.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581929374355673963, guid: 6ab6824315789a84f86d9441e8dee4ef,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -6.39
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ab6824315789a84f86d9441e8dee4ef, type: 3}

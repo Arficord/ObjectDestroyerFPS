@@ -7,9 +7,10 @@ namespace Arf.Player
 {
     public class CharacterAnimator : MonoBehaviour
     {
-        [SerializeField] private bool useAnimator = true;
+        [SerializeField] private bool useMainAnimator = true;
         [SerializeField] private Animator animator;
         [SerializeField] private float movementDumping = 0.1f;
+        [SerializeField] private CharacterAnimator[] childAnimators = new CharacterAnimator[0];
 
         private const string NameMovementX = "MovementX";
         private const string NameMovementZ = "MovementZ";
@@ -34,7 +35,12 @@ namespace Arf.Player
 
         public void SetMovement(Vector3 movement)
         {
-            if (!useAnimator)
+            for (int i = 0; i < childAnimators.Length; i++)
+            {
+                childAnimators[i].SetMovement(movement);
+            }
+            
+            if (!useMainAnimator)
             {
                 return;
             }
@@ -45,7 +51,12 @@ namespace Arf.Player
 
         public void SetMainAbilityID(int id)
         {
-            if (!useAnimator)
+            for (int i = 0; i < childAnimators.Length; i++)
+            {
+                childAnimators[i].SetMainAbilityID(id);
+            }
+            
+            if (!useMainAnimator)
             {
                 return;
             }
@@ -54,7 +65,12 @@ namespace Arf.Player
         
         public void SetSecondaryAbilityID(int id)
         {
-            if (!useAnimator)
+            for (int i = 0; i < childAnimators.Length; i++)
+            {
+                childAnimators[i].SetSecondaryAbilityID(id);
+            }
+            
+            if (!useMainAnimator)
             {
                 return;
             }
