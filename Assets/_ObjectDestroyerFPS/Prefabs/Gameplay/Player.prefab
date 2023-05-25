@@ -204,7 +204,7 @@ MonoBehaviour:
   cameraController: {fileID: 0}
   walkSpeed: 3
   runSpeed: 7
-  onGroundYVelocity: -0.01
+  onGroundYVelocity: -1
   colideChecker: {fileID: 4564608325954706772}
   _abilities:
   - rid: 7981683071602130944
