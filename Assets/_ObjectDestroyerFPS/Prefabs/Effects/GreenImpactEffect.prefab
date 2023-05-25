@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1816a0fa54a37ea4280da212d019a5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 8207588555740536216}
+  particleSystemVFX: {fileID: 8207588555740536216}
 --- !u!198 &8207588555740536216 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 4642848129145531053, guid: 3138a83bedbd6ad4481ba0b061da2eb6,

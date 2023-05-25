@@ -7,6 +7,7 @@ namespace Arf.Player
 {
     public class CharacterAnimator : MonoBehaviour
     {
+        [SerializeField] private bool useAnimator = true;
         [SerializeField] private Animator animator;
         [SerializeField] private float movementDumping = 0.1f;
 
@@ -33,6 +34,10 @@ namespace Arf.Player
 
         public void SetMovement(Vector3 movement)
         {
+            if (!useAnimator)
+            {
+                return;
+            }
             animator.SetBool(_hashMoving, movement.x != 0 || movement.z != 0);
             animator.SetFloat(_hashMovementX, movement.x, movementDumping, Time.deltaTime);
             animator.SetFloat(_hashMovementZ, movement.z, movementDumping, Time.deltaTime);
@@ -40,11 +45,19 @@ namespace Arf.Player
 
         public void SetMainAbilityID(int id)
         {
+            if (!useAnimator)
+            {
+                return;
+            }
             animator.SetInteger(_hashMainAbilityID, id);
         }
         
         public void SetSecondaryAbilityID(int id)
         {
+            if (!useAnimator)
+            {
+                return;
+            }
             animator.SetInteger(_hashSecondaryAbilityID, id);
         }
     }

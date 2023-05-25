@@ -7,7 +7,7 @@ namespace Arf.Pooling.Targets
 {
     public class PoolableEffect : MonoBehaviour, IPoolable
     {
-        [SerializeField] private ParticleSystem particleSystem;
+        [SerializeField] private ParticleSystem particleSystemVFX;
 
         private IPool _pool;
         private Transform _transform;
@@ -52,7 +52,7 @@ namespace Arf.Pooling.Targets
         private void InitializeInternal()
         {
             _transform = transform;
-            var particleSystemMain = particleSystem.main;
+            var particleSystemMain = particleSystemVFX.main;
             particleSystemMain.stopAction = ParticleSystemStopAction.Callback;
         }
         
